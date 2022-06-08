@@ -1,6 +1,13 @@
 version: 2
 
 models:
+  - name: fct_campaign_events
+    description: "Campaign Events Fact Table"
+    columns:
+      - name: festival_id
+        description: "Festival ID foreign key"
+        tests:
+          - not_null
   - name: fct_events
     description: "Events Fact Table"
     columns:

@@ -2,7 +2,7 @@
 
 with source as (
     
-    select * from {{ source('google_analytics_4', 'campaign_events') }}
+    select * from {{ source('marketing_google_analytics_4', 'campaign_events') }}
     
 )
 
